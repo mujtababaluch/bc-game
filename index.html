@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BC Game</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="css/tempusdominus-bootstrap-4.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="css/OverlayScrollbars.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Owl Carosel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- BootStrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Emoji -->
+    <link rel="stylesheet" href="css/emojibuttonlistjs.min.css" />
+    <script src="js/emojibuttonlistjs.min.js"></script>
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+      <!-- Preloader -->
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="images/logo.webp"
+          alt="BC Game"
+          height="100"
+        />
+      </div>
+
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-dark navbar-dark">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+          <li class="nav-item w-50 me-4">
+            <img src="images/logo.webp" class="w-75 mt-1" alt="" />
+          </li>
+          <li class="nav-item w-100 search-box-parent">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Game name | Provider | Caregory Tag"
+              />
+            </div>
+          </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto nav-items-left">
+          <li class="nav-link">
+            <a
+              href="#"
+              class="signin-link"
+              data-bs-toggle="modal"
+              data-bs-target="#signinModal"
+              >sign in</a
+            >
+          </li>
+          <li class="nav-link">
+            <a
+              href="#"
+              class="btn-signup"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+              >Sign up</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-widget="control-sidebar"
+              data-controlsidebar-slide="true"
+              href="#"
+              role="button"
+            >
+              <i class="fa-solid fa-comment"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="signinModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modalHeader">
+              <div class="d-flex justify-content-between p-3">
+                <img src="images/logo2.webp" class="w-25" alt="" />
+                <button
+                  type="button"
+                  class="btn-close text-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="row">
+                <div class="col-5">
+                  <h3 class="fw-bold text-white pl-2">
+                    BUILD THE BEST CRYPTO CASINO TOGETHER
+                  </h3>
+                </div>
+                <div class="col-7">
+                  <img src="images/login_coco.webp" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="modalBody p-4">
+              <form>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label text-secondary fw-light"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="text-control"
+                    id="exampleInputEmail1"
+                    placeholder="Email"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputPassword1"
+                    class="form-label text-secondary fw-light"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="text-control"
+                    placeholder="Login Password"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div class="d-flex justify-content-between btnGroup">
+                  <a
+                    href="#"
+                    class="btn-signin"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signinModal"
+                    >Sign in</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-signup-grey"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signupModal"
+                    >sign up <i class="bi bi-caret-right-fill"></i
+                  ></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="signupModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modalHeader">
+              <div class="d-flex justify-content-between p-3">
+                <img src="images/logo2.webp" class="w-25" alt="" />
+                <button
+                  type="button"
+                  class="btn-close text-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="row">
+                <div class="col-5">
+                  <h3 class="fw-bold text-white pl-2">
+                    BUILD THE BEST CRYPTO CASINO TOGETHER
+                  </h3>
+                </div>
+                <div class="col-7">
+                  <img src="images/login_coco.webp" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="modalBody p-4">
+              <form>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label text-secondary fw-light"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="text-control"
+                    id="exampleInputEmail1"
+                    placeholder="Email"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputPassword1"
+                    class="form-label text-secondary fw-light"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="text-control"
+                    placeholder="Login Password"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div class="d-flex justify-content-between btnGroup">
+                  <a
+                    href="#"
+                    class="btn-signup-grey"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signinModal"
+                    >Sign in</a
+                  >
+                  <a href="#" class="btn-signup-modal">sign up</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+          <div class="mt-3 pb-3 mb-3 d-flex">
+            <div class="btn-menu-active">
+              <i class="fa-solid fa-leaf"></i> Casino
+            </div>
+            <div class="btn-menu">
+              <i class="fa-solid fa-baseball"></i> Casino
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link active-item">
+                  <img src="images/home.webp" class="menu-icons" alt="" />
+                  <p>
+                    Home
+                    <span class="right badge badge-danger">New</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="images/originalcasino.webp"
+                    class="menu-icons"
+                    alt=""
+                  />
+                  <p>
+                    BC Originals
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">6</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Top Navigation</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="pages/layout/top-nav-sidebar.html"
+                      class="nav-link"
+                    >
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Top Navigation + Sidebar</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Boxed</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Fixed Sidebar</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="pages/layout/fixed-sidebar-custom.html"
+                      class="nav-link"
+                    >
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Fixed Sidebar <small>+ Custom Area</small></p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-topnav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Fixed Navbar</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-footer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Fixed Footer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="pages/layout/collapsed-sidebar.html"
+                      class="nav-link"
+                    >
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Collapsed Sidebar</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/slots.webp" class="menu-icons" alt="" />
+                  <p>Slots</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/livecasino.webp" class="menu-icons" alt="" />
+                  <p>Live Casino</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/promotion.webp" class="menu-icons" alt="" />
+                  <p class="text-highlighted">Promotions</p>
+                </a>
+                <div class="menu-cards-container">
+                  <div class="menu-card-row mt-2">
+                    <div class="menu-card">
+                      <img src="images/task-D.webp" alt="" />
+                    </div>
+                    <div class="menu-card">
+                      <img src="images/spin.99a0cd5f.png" alt="" />
+                    </div>
+                    <div class="menu-card">
+                      <img src="images/pig.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="menu-card-row mt-2">
+                    <div class="menu-card">
+                      <img src="images/Recharge_d.webp" alt="" />
+                    </div>
+                    <div class="menu-card">
+                      <img
+                        src="images/shitcode.dcc7e39e.svg"
+                        class="w-50"
+                        alt=""
+                      />
+                    </div>
+                    <div class="menu-card">
+                      <img src="images/bcdcoin2.webp" class="w-50" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+              </li>
+
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/livecasino.webp" class="menu-icons" alt="" />
+                  <p>Lottery</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/affiliate.webp" class="menu-icons" alt="" />
+                  <p>Affiliate</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/vipclub.webp" class="menu-icons" alt="" />
+                  <p>VIP Club</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/forum.webp" class="menu-icons" alt="" />
+                  <p>Forum</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/fairness.webp" class="menu-icons" alt="" />
+                  <p>Provvably Fair</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/myfavorite.webp" class="menu-icons" alt="" />
+                  <p>Favorite Games</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <img src="images/download.png" class="menu-icons" alt="" />
+                  <p>Recent Play</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <small>Language Options</small>
+                <a href="#" class="nav-link language-box">
+                  <p>
+                    English
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/charts/chartjs.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>French</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/charts/flot.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Chinese</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/charts/inline.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Japanese</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <div class="content-wrapper">
+        <div class="owl-carousel newCarosel owl-theme p-3">
+          <div class="item">
+            <div class="banner-card">
+              <a href="#">
+                <img src="images/card-2.webp" alt="card-1" />
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner-card">
+              <a href="#">
+                <img src="images/card-3.png" alt="card-1" />
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner-card">
+              <a href="#">
+                <img src="images/card-4.png" alt="card-1" />
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner-card">
+              <a href="#">
+                <img src="images/card-5.png" alt="card-1" />
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner-card">
+              <a href="#">
+                <img src="images/card-6.png" alt="card-1" />
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner-card">
+              <a href="#">
+                <img src="images/card-7.png" alt="card-1" />
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner-card">
+              <a href="#">
+                <img src="images/card-8.png" alt="card-1" />
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner-card">
+              <a href="#">
+                <img src="images/card-9.png" alt="card-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row p-3 br-15 m-3 bg-dark-theme">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="col-inner">
+                <h6 class="text-white">
+                  <img src="images/bigprofit.webp" alt="" />
+                  <span style="color: rgb(231, 11, 108)">Much</span>
+                  Wow Wins
+                </h6>
+                <div class="data-card">
+                  <div class="data-img">
+                    <img src="images/data-card-1.png" alt="" />
+                  </div>
+                  <div class="data-body text-white">
+                    <span>Hidden</span>
+                    <p class="card-price mt-1">
+                      Won: <span>&dollar;10847.00</span>
+                    </p>
+                    <p class="data-type">In Sweet Bonanza</p>
+                  </div>
+                </div>
+                <div class="data-card my-2">
+                  <div class="data-img">
+                    <img src="images/data-card-2.png" alt="" />
+                  </div>
+                  <div class="data-body text-white">
+                    <span>Hidden</span>
+                    <p class="card-price mt-1">
+                      Won: <span>&dollar;10847.00</span>
+                    </p>
+                    <p class="data-type">In Mental</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="col-inner">
+                <h6 class="text-white">
+                  <img src="images/topprofit.webp" alt="" />
+                  <span style="color: rgb(245, 192, 31)">Top</span>
+                  Wining Games
+                </h6>
+                <div class="data-card">
+                  <div class="data-img">
+                    <img src="images/data-card-1.png" alt="" />
+                  </div>
+                  <div class="data-body text-white">
+                    <span>Hidden</span>
+                    <p class="card-price mt-1">
+                      Won: <span>&dollar;10847.00</span>
+                    </p>
+                    <p class="data-type">In Sweet Bonanza</p>
+                  </div>
+                </div>
+                <div class="data-card my-2">
+                  <div class="data-img">
+                    <img src="images/data-card-3.png" alt="" />
+                  </div>
+                  <div class="data-body text-white">
+                    <span>Hidden</span>
+                    <p class="card-price mt-1">
+                      Won: <span>&dollar;10847.00</span>
+                    </p>
+                    <p class="data-type">In Mental</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="col-inner">
+                <h6 class="text-white">
+                  <img src="images/popular.webp" alt="" />
+                  <span style="color: rgb(93, 219, 28)">Trending</span>
+                  Right Now
+                </h6>
+                <!-- <div class="trend-cards-container"> -->
+                <div class="">
+                  <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="item">
+                      <div class="trend-card">
+                        <div class="trend-img">
+                          <img src="images/data-card-1.png" alt="" />
+                        </div>
+                        <div class="trend-body text-white">
+                          <p class="trend-type m-0">Tower</p>
+                          <span>Hidden</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="trend-card">
+                        <div class="trend-img">
+                          <img src="images/data-card-3.png" alt="" />
+                        </div>
+                        <div class="trend-body text-white">
+                          <p class="trend-type m-0">Tower</p>
+                          <span>Hidden</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="trend-card">
+                        <div class="trend-img">
+                          <img src="images/data-card-2.png" alt="" />
+                        </div>
+                        <div class="trend-body text-white">
+                          <p class="trend-type m-0">Tower</p>
+                          <span>Hidden</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="col-inner">
+                <h6 class="text-white">
+                  <img src="images/recent.webp" alt="" />
+                  Recently Added
+                </h6>
+                <div class="trend-cards-container">
+                  <div class="trend-card">
+                    <div class="trend-img">
+                      <img src="images/data-card-1.png" alt="" />
+                    </div>
+                    <div class="trend-body text-white">
+                      <p class="trend-type m-0">Tower Legend</p>
+                      <span>Hidden</span>
+                    </div>
+                  </div>
+                  <div class="trend-card">
+                    <div class="trend-img">
+                      <img src="images/data-card-3.png" alt="" />
+                    </div>
+                    <div class="trend-body text-white">
+                      <p class="trend-type m-0">Tower Legend</p>
+                      <span>Hidden</span>
+                    </div>
+                  </div>
+                  <div class="trend-card">
+                    <div class="trend-img">
+                      <img src="images/data-card-2.png" alt="" />
+                    </div>
+                    <div class="trend-body text-white">
+                      <p class="trend-type m-0">Tower Legend</p>
+                      <span>Hidden</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <div class="container d-flex justify-content-end">
+          <div class="tabs m-3 bg-dark-theme">
+            <div class="active">
+              <p><i class="fa-solid fa-torii-gate"></i> Lobby</p>
+            </div>
+            <div>
+              <p><i class="fa-solid fa-torii-gate"></i> Original</p>
+            </div>
+            <div>
+              <p><i class="fa-solid fa-torii-gate"></i> Slots</p>
+            </div>
+            <div>
+              <p><i class="fa-solid fa-torii-gate"></i> Live Casino</p>
+            </div>
+            <div>
+              <p><i class="fa-solid fa-torii-gate"></i> Table Game</p>
+            </div>
+            <div>
+              <p><i class="fa-solid fa-torii-gate"></i> Game Show</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="container mt-4 tabs-container">
+          <div class="tabset ml-2">
+            <!-- Tab 1 -->
+            <input
+              type="radio"
+              name="tabset"
+              id="tab1"
+              aria-controls="lobby"
+              checked
+            />
+            <label for="tab1" id="" class="labby">Lobby</label>
+            <!-- Tab 2 -->
+            <input
+              type="radio"
+              name="tabset"
+              id="tab2"
+              aria-controls="original"
+            />
+            <label for="tab2">Original</label>
+            <!-- Tab 3 -->
+            <input type="radio" name="tabset" id="tab3" aria-controls="slots" />
+            <label for="tab3">Slots</label>
+
+            <!-- Tab 4 -->
+            <input
+              type="radio"
+              name="tabset"
+              id="tab4"
+              aria-controls="liveCasino"
+            />
+            <label for="tab4">Live Casino</label>
+
+            <!-- Tab 5 -->
+            <input
+              type="radio"
+              name="tabset"
+              id="tab5"
+              aria-controls="tableGame"
+            />
+            <label for="tab5">Table Game</label>
+
+            <!-- Tab 6 -->
+            <input
+              type="radio"
+              name="tabset"
+              id="tab6"
+              aria-controls="gameShow"
+            />
+            <label for="tab6">Game Show</label>
+
+            <div class="tab-panels">
+              <section id="lobby" class="tab-panel">
+                <div class="container my-4">
+                  <div class="p-3 br-15 m-3 bg-dark-theme">
+                    <h5 class="font-italic font-weight-bolder text-white mb-3">
+                      BEST FROM THE <span style="color: #e70b6c">SLOTS</span>
+                    </h5>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="original" class="tab-panel">
+                <div class="container my-4">
+                  <div class="p-3 br-15 m-3 bg-dark-theme">
+                    <h5 class="font-italic font-weight-bolder text-white mb-3">
+                      BEST <span style="color: #e70b6c">IN HOUSE</span> GAMES
+                    </h5>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="slots" class="tab-panel">
+                <div class="container my-4">
+                  <div class="p-3 br-15 m-3 bg-dark-theme">
+                    <h5 class="font-italic font-weight-bolder text-white mb-3">
+                      <span style="color: #e70b6c">MEGA SLOTS</span> STORE
+                    </h5>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="liveCasino" class="tab-panel">
+                <div class="container my-4">
+                  <div class="p-3 br-15 m-3 bg-dark-theme">
+                    <h5 class="font-italic font-weight-bolder text-white mb-3">
+                      <span style="color: #e70b6c">BEST LIVE</span> GAMES
+                    </h5>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="tableGame" class="tab-panel">
+                <div class="container my-4">
+                  <div class="p-3 br-15 m-3 bg-dark-theme">
+                    <h5 class="font-italic font-weight-bolder text-white mb-3">
+                      <span style="color: #e70b6c">TOP TABLE</span> GAMES
+                    </h5>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="gameShow" class="tab-panel">
+                <div class="container my-4">
+                  <div class="p-3 br-15 m-3 bg-dark-theme">
+                    <h5 class="font-italic font-weight-bolder text-white mb-3">
+                      <span style="color: #e70b6c">BEST GAMESHOW</span> GAMES
+                    </h5>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-1.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-2.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-3.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="game-card">
+                          <img src="images/game-card-4.png" alt="" />
+                          <div class="game-card-body">
+                            <p>Tower Legend</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-4">
+          <div class="p-3 br-15 m-3 bg-dark-theme">
+            <h5 class="font-italic font-weight-bolder text-white mb-3">
+              BEST FROM THE <span style="color: #e70b6c">SLOTS</span>
+            </h5>
+            <div class="row my-2">
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-1.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-2.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-3.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-3.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-4.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-1.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-2.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-3.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-3.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-4.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-4">
+          <div class="p-3 br-15 m-3 bg-dark-theme">
+            <h5 class="font-italic font-weight-bolder text-white mb-3">
+              FEATURE BUY-IN <br /><span style="color: #e70b6c">SLOTS</span>
+            </h5>
+            <div class="row my-2">
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-1.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-2.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-3.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-3.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="game-card">
+                  <img src="images/game-card-4.png" alt="" />
+                  <div class="game-card-body">
+                    <p>Tower Legend</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-4">
+          <div class="p-3 br-15 m-3 bg-dark-theme">
+            <div class="row my-2">
+              <table
+                class="table table-hover table-dark table-borderless table-responsive rounded-sm"
+              >
+                <thead>
+                  <tr>
+                    <th>Game</th>
+                    <th>Player</th>
+                    <th>Bet Amount</th>
+                    <th>Multiplier</th>
+                    <th>Profit Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Libmo</td>
+                    <td>Hidden</td>
+                    <td>
+                      <img
+                        src="images/USDT.webp"
+                        alt=""
+                      />&nbsp;&nbsp;172.2456875458
+                    </td>
+                    <td>5.50x</td>
+                    <td>
+                      <img
+                        src="images/USDT.webp"
+                        alt=""
+                      />&nbsp;&nbsp;0.2415478005
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Libmo</td>
+                    <td>Hidden</td>
+                    <td>
+                      <img
+                        src="images/BNB.webp"
+                        alt=""
+                      />&nbsp;&nbsp;172.2456875458
+                    </td>
+                    <td>5.50x</td>
+                    <td>
+                      <img
+                        src="images/BNB.webp"
+                        alt=""
+                      />&nbsp;&nbsp;0.2415478005
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Libmo</td>
+                    <td>Hidden</td>
+                    <td>
+                      <img
+                        src="images/USDT.webp"
+                        alt=""
+                      />&nbsp;&nbsp;172.2456875458
+                    </td>
+                    <td>5.50x</td>
+                    <td>
+                      <img
+                        src="images/USDT.webp"
+                        alt=""
+                      />&nbsp;&nbsp;0.2415478005
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Libmo</td>
+                    <td>Hidden</td>
+                    <td>
+                      <img
+                        src="images/BNB.webp"
+                        alt=""
+                      />&nbsp;&nbsp;172.2456875458
+                    </td>
+                    <td>5.50x</td>
+                    <td>
+                      <img
+                        src="images/BNB.webp"
+                        alt=""
+                      />&nbsp;&nbsp;0.2415478005
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Libmo</td>
+                    <td>Hidden</td>
+                    <td>
+                      <img
+                        src="images/USDT.webp"
+                        alt=""
+                      />&nbsp;&nbsp;172.2456875458
+                    </td>
+                    <td>5.50x</td>
+                    <td>
+                      <img
+                        src="images/USDT.webp"
+                        alt=""
+                      />&nbsp;&nbsp;0.2415478005
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Libmo</td>
+                    <td>Hidden</td>
+                    <td>
+                      <img
+                        src="images/BNB.webp"
+                        alt=""
+                      />&nbsp;&nbsp;172.2456875458
+                    </td>
+                    <td>5.50x</td>
+                    <td>
+                      <img
+                        src="images/BNB.webp"
+                        alt=""
+                      />&nbsp;&nbsp;0.2415478005
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Libmo</td>
+                    <td>Hidden</td>
+                    <td>
+                      <img
+                        src="images/USDT.webp"
+                        alt=""
+                      />&nbsp;&nbsp;172.2456875458
+                    </td>
+                    <td>5.50x</td>
+                    <td>
+                      <img
+                        src="images/USDT.webp"
+                        alt=""
+                      />&nbsp;&nbsp;0.2415478005
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Libmo</td>
+                    <td>Hidden</td>
+                    <td>
+                      <img
+                        src="images/BNB.webp"
+                        alt=""
+                      />&nbsp;&nbsp;172.2456875458
+                    </td>
+                    <td>5.50x</td>
+                    <td>
+                      <img
+                        src="images/BNB.webp"
+                        alt=""
+                      />&nbsp;&nbsp;0.2415478005
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-4">
+          <div class="p-5 br-15 m-3 bg-dark-theme">
+            <div class="row my-2">
+              <h4 class="txt-grey font-weight-bold my-3">
+                Crypto Online Casino
+              </h4>
+              <p class="txt-grey">
+                Casinos online have not always been around, but we can safely
+                say that online casinos have been used a lot since they came on
+                the market. And it's not in short demand nor options, and now in
+                2022, we have 1000s and 1000s to pick from – it's just a matter
+                of what you like and what payment options you would like to see
+                at the casino. Players are always looking for something new,
+                which will help make the gaming experience so much better and
+                more accessible. Allowing the player to focus on the absolute
+                fun of a casino, that's right, the games themselves. That's why
+                we are now going to tell you all you need to know about a crypto
+                casino or bitcoin gambling or bitcoin casino, whatever you want
+                to call it.
+              </p>
+              <a href="#" class="text-decoration-none txt-green"
+                >Show more >></a
+              >
+            </div>
+            <hr class="bg-dark" />
+            <div class="row">
+              <div
+                class="col-lg-3 col-md-6 col-sm-6 my-3 border-right border-secondary"
+              >
+                <img src="images/logo.webp" class="w-50" alt="" />
+                <p class="txt-grey mt-3">
+                  BC.GAME is a community-based crypto casino that offers their
+                  players the best online casino experience possible! At
+                  BC.GAME, we are convinced that blockchain will change the
+                  online crypto gambling industry forever! Jump in and check it
+                  out for yourself! Have fun and earn crypto!
+                </p>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 my-3 pl-3">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >JOIN US</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >HELP CENTER</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >USER AGREEMENT</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >PRIVACY POLICY</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >APP</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >FORUM</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >GAMBLE AWARE</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >NEWS</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >OFFICIAL MIRRORS</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none txt-grey my-2"
+                      >AML</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 my-3 pl-3">
+                <div>
+                  <h6 class="txt-grey my-3">Contact Us</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="txt-grey">
+                      Help: <a href="#" class="txt-green">Help.bc.game</a>
+                    </div>
+                    <div class="txt-grey">
+                      Business:
+                      <a href="#" class="txt-green">Business@bc.game</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <header class="messages-header">
+          <div class="chat-tab">
+            <h5>Global</h5>
+          </div>
+        </header>
+        <footer class="messages-footer">
+          <div class="message-control">
+            <div class="message-input" id="display">
+              <input
+                type="text"
+                id="text1"
+                class="message-textbox"
+                placeholder="Your Message"
+              />
+              <i class="fa-solid fa-face-meh-blank" id="button1"></i>
+            </div>
+            <button class="btn-signup border-0 btn-message">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </footer>
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- BootStrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.overlayScrollbars.min.js"></script>
+    <!-- Owl Carosel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Main Js -->
+    <script src="js/main.js"></script>
+    <script>
+      $(".owl-carousel1").owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 20,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 4,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+
+      $(".newCarosel").owlCarousel({
+        loop: true,
+        margin: 50,
+        nav: false,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          800:{
+            items: 3
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+
+      $(document).ready(function () {
+        $(".message-textbox").focusin(function () {
+          $(".btn-message").show();
+          $(".message-input").addClass("w-180");
+        });
+        $(".message-textbox").focusout(function () {
+          $(".btn-message").hide();
+          $(".message-input").removeClass("w-180");
+        });
+
+        $('.fa-comment').click(function(){
+          // if($('.control-sidebar').css('display') == "block"){
+          //   alert($('.control-sidebar').css('display'));  
+            $('.content-wrapper').toggleClass("ml-main")
+          // }
+        })
+
+      });
+
+      var margin = 10,
+        instance1 = new emojiButtonList("button1", {
+          dropDownXAlign: "left",
+          textBoxID: "text1",
+          yAlignMargin: margin,
+          xAlignMargin: margin,
+        });
+      function emojiClickEvent(emojiText) {
+        document.title += " " + emojiText;
+      }
+    </script>
+  </body>
+</html>
